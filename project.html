@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtuele serveromgeving — Mansour Karimi</title>
-    <meta name="description" content="Hoe Mansour Karimi in VMware een domein opzette met Windows Server 2025, Active Directory en twee clients met Windows 11.">
+    <title>Projecten in detail — Mansour Karimi</title>
+    <meta name="description" content="Drie projecten van Mansour Karimi: serverbeheer met VMware en Active Directory, webtechnologie met deze website, en scripting in Linux.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
@@ -31,112 +31,108 @@
         </header>
         <div class="grid grid-cols-1 gap-10 py-8 lg:grid-cols-3">
             <main id="inhoud" class="lg:col-span-2">
-                <p class="text-sm text-slate-500"><a href="portfolio.html" class="rounded text-teal-700 underline hover:text-teal-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">Portfolio</a> › Virtuele serveromgeving</p>
-                <h1 class="mt-3 text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">Virtuele serveromgeving</h1>
-                <figure class="mt-6">
-                    <img src="assets/images/project-virtuele-serveromgeving.svg" alt="Schema van server DC01 met de clients CL01 en CL02 in VMware" width="1200" height="675" class="aspect-video w-full rounded-xl object-cover">
-                    <figcaption class="mt-2 text-sm text-slate-500">De opbouw: één domeincontroller en twee clients in hetzelfde virtuele netwerk.</figcaption>
-                </figure>
+                <p class="text-sm font-semibold uppercase tracking-widest text-teal-700">Projecten</p>
+                <h1 class="mt-1 text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">Mijn projecten in detail</h1>
+                <p class="mt-3 max-w-2xl text-lg text-slate-600">Hier lees je per project wat ik maakte en wat ik ervan leerde.</p>
 
-                <h2 class="mt-10 text-2xl font-semibold tracking-tight text-slate-900">Over dit project</h2>
-                <div class="max-w-2xl">
-                    <p class="mt-3 leading-relaxed">In het vak Serverbeheer bouwde ik een kleine bedrijfsomgeving na op mijn eigen laptop. Alles draait virtueel in VMware, zodat ik vrij kan testen zonder iets kapot te maken. Het doel: een server die gebruikers beheert, en clients waarop die gebruikers zich kunnen aanmelden.</p>
-                    <p class="mt-3 leading-relaxed">Het lastigste was DNS. Zolang de clients de server niet als DNS-server gebruikten, vonden ze het domein niet. Toen ik dat had opgelost, werkte de rest vlot.</p>
-                </div>
-
-                <h2 class="mt-10 text-2xl font-semibold tracking-tight text-slate-900">Wat ik deed</h2>
-                <ul class="mt-4 max-w-2xl space-y-3">
-                    <li class="flex items-start gap-3"><svg aria-hidden="true" class="mt-0.5 size-5 shrink-0 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Drie virtuele machines aangemaakt in VMware Workstation, in een eigen intern netwerk</span></li>
-                    <li class="flex items-start gap-3"><svg aria-hidden="true" class="mt-0.5 size-5 shrink-0 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Windows Server 2025 geïnstalleerd en gepromoveerd tot domeincontroller voor mansour.local</span></li>
-                    <li class="flex items-start gap-3"><svg aria-hidden="true" class="mt-0.5 size-5 shrink-0 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>DNS en DHCP ingesteld, zodat de clients automatisch een adres krijgen</span></li>
-                    <li class="flex items-start gap-3"><svg aria-hidden="true" class="mt-0.5 size-5 shrink-0 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Twee clients met Windows 11 lid gemaakt van het domein en aangemeld met een domeingebruiker</span></li>
-                </ul>
-
-                <div class="mt-10 overflow-x-auto">
-                    <table class="w-full border-collapse text-sm">
-                        <caption class="mb-2 text-left font-semibold text-slate-900">De instellingen van de drie virtuele machines</caption>
-                        <thead>
-                            <tr class="bg-slate-900 text-white">
-                                <th scope="col" class="border border-slate-300 px-4 py-2 text-left">Machine</th>
-                                <th scope="col" class="border border-slate-300 px-4 py-2 text-left">Besturingssysteem</th>
-                                <th scope="col" class="border border-slate-300 px-4 py-2 text-right">Geheugen</th>
-                                <th scope="col" class="border border-slate-300 px-4 py-2 text-right">Schijf</th>
-                                <th scope="col" class="border border-slate-300 px-4 py-2 text-left">IP-adres</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="bg-white">
-                                <th scope="row" class="border border-slate-300 px-4 py-2 text-left font-semibold text-slate-900">DC01</th>
-                                <td class="border border-slate-300 px-4 py-2">Windows Server 2025</td>
-                                <td class="border border-slate-300 px-4 py-2 text-right">4 GB</td>
-                                <td class="border border-slate-300 px-4 py-2 text-right">60 GB</td>
-                                <td class="border border-slate-300 px-4 py-2">192.168.10.10</td>
-                            </tr>
-                            <tr class="bg-slate-50">
-                                <th scope="row" class="border border-slate-300 px-4 py-2 text-left font-semibold text-slate-900">CL01</th>
-                                <td class="border border-slate-300 px-4 py-2">Windows 11</td>
-                                <td class="border border-slate-300 px-4 py-2 text-right">4 GB</td>
-                                <td class="border border-slate-300 px-4 py-2 text-right">64 GB</td>
-                                <td class="border border-slate-300 px-4 py-2">via DHCP</td>
-                            </tr>
-                            <tr class="bg-white">
-                                <th scope="row" class="border border-slate-300 px-4 py-2 text-left font-semibold text-slate-900">CL02</th>
-                                <td class="border border-slate-300 px-4 py-2">Windows 11</td>
-                                <td class="border border-slate-300 px-4 py-2 text-right">4 GB</td>
-                                <td class="border border-slate-300 px-4 py-2 text-right">64 GB</td>
-                                <td class="border border-slate-300 px-4 py-2">via DHCP</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
-                    <figure>
-                        <img src="assets/images/project-dc01-rollen.svg" alt="Schema van DC01 met de rollen AD DS, DNS en DHCP" width="1200" height="675" class="aspect-video w-full rounded-xl object-cover">
-                        <figcaption class="mt-2 text-sm text-slate-500">De drie rollen op de domeincontroller.</figcaption>
+                <section id="serverbeheer" class="mt-12 border-t border-slate-200 pt-10">
+                    <p class="text-sm font-semibold uppercase tracking-widest text-teal-700">Project 1</p>
+                    <h2 class="mt-1 text-2xl font-semibold tracking-tight text-slate-900">Serverbeheer</h2>
+                    <figure class="mt-6">
+                        <img src="assets/images/project-virtuele-serveromgeving.svg" alt="Schema van server DC01 met de clients CL01 en CL02 in VMware" width="1200" height="675" class="aspect-video w-full rounded-xl object-cover">
+                        <figcaption class="mt-2 text-sm text-slate-500">De opbouw: één centrale server en twee clients in hetzelfde virtuele netwerk.</figcaption>
                     </figure>
-                    <figure>
+                    <figure class="mt-6">
+                        <img src="assets/images/project-dc01-rollen.svg" alt="Schema van DC01 met de rollen AD DS, DNS en DHCP" width="1200" height="675" class="aspect-video w-full rounded-xl object-cover">
+                        <figcaption class="mt-2 text-sm text-slate-500">De drie belangrijkste diensten op de server.</figcaption>
+                    </figure>
+                    <figure class="mt-6">
                         <img src="assets/images/project-domein-toevoegen.svg" alt="Vijf stappen om een client aan het domein toe te voegen" width="1200" height="675" class="aspect-video w-full rounded-xl object-cover">
                         <figcaption class="mt-2 text-sm text-slate-500">De stappen om een client lid te maken van het domein.</figcaption>
                     </figure>
-                </div>
+                    <div class="max-w-2xl">
+                        <h3 class="mt-8 text-lg font-semibold text-slate-900">Projectbeschrijving</h3>
+                        <p class="mt-3 leading-relaxed">Voor deze opdracht heb ik een gesimuleerd bedrijfsnetwerk opgezet met meerdere virtuele machines in VMware Workstation Pro. Eén centrale server met Windows Server 2025 beheert het netwerk, en verschillende clients met Windows 11 zijn ermee verbonden. Zo kan ik alles vanuit één punt beheren, net zoals in een echt bedrijf.</p>
+                        <p class="mt-3 leading-relaxed">Eerst heb ik de virtuele machines aangemaakt en in een eigen intern netwerk gezet. Daarna heb ik Windows Server 2025 geïnstalleerd en de server gepromoveerd tot domeincontroller voor het domein mansour.local. Met Active Directory heb ik organisatie-eenheden, gebruikers en groepen aangemaakt. DNS zorgt ervoor dat de clients het domein vinden, en DHCP geeft ze automatisch een IP-adres.</p>
+                        <p class="mt-3 leading-relaxed">Ten slotte heb ik de clients lid gemaakt van het domein en me aangemeld met een domeingebruiker. Het lastigste was DNS: zolang de clients de server niet als DNS-server gebruikten, vonden ze het domein niet. Toen dat opgelost was, werkte de rest vlot.</p>
+                        <h3 class="mt-8 text-lg font-semibold text-slate-900">Projectinformatie</h3>
+                        <p class="mt-3 leading-relaxed">Dit project behandelt de basis van serverbeheer in een Windows-omgeving: virtualisatie, Active Directory, DNS en DHCP. Ik heb ervaring opgedaan met het opzetten van een domein, het beheren van gebruikers en groepen, en het koppelen van clients aan een centrale server.</p>
+                        <p class="mt-3 leading-relaxed">Zo'n opstelling vormt de basis van bijna elk bedrijfsnetwerk. Doordat alles virtueel draait, kan ik veilig testen en fouten maken zonder echte toestellen of een echt netwerk te raken.</p>
+                        <p class="mt-6 text-sm text-slate-600"><strong class="text-slate-900">Tools:</strong> VMware Workstation Pro, Windows Server 2025, Active Directory, DNS, DHCP, Windows 11</p>
+                    </div>
+                    <p class="mt-8"><a href="#inhoud" class="rounded text-sm text-teal-700 underline hover:text-teal-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">Naar boven</a></p>
+                </section>
+
+                <section id="webtechnologie" class="mt-12 border-t border-slate-200 pt-10">
+                    <p class="text-sm font-semibold uppercase tracking-widest text-teal-700">Project 2</p>
+                    <h2 class="mt-1 text-2xl font-semibold tracking-tight text-slate-900">Webtechnologie</h2>
+                    <figure class="mt-6">
+                        <img src="assets/images/project-portfolio-website.svg" alt="Schets van de startpagina van deze website" width="1200" height="675" class="aspect-video w-full rounded-xl object-cover">
+                        <figcaption class="mt-2 text-sm text-slate-500">De startpagina van deze website, zoals ik ze in mijn wireframe tekende.</figcaption>
+                    </figure>
+                    <div class="max-w-2xl">
+                        <h3 class="mt-8 text-lg font-semibold text-slate-900">Projectbeschrijving</h3>
+                        <p class="mt-3 leading-relaxed">Voor deze opdracht heb ik de website gebouwd die je nu bekijkt. Ik begon met inspiratie en wireframes, en bouwde daarna elke week een stuk verder: de pagina's in HTML, de opmaak met Tailwind CSS, een menu voor de gsm, een contactformulier en ten slotte het online zetten.</p>
+                        <h3 class="mt-8 text-lg font-semibold text-slate-900">Projectinformatie</h3>
+                        <p class="mt-3 leading-relaxed">Dit project behandelt HTML, Tailwind CSS, responsive design, formulieren en toegankelijkheid. De site werkt op gsm, tablet en laptop, en is ook met alleen het toetsenbord te gebruiken. Met Git en GitHub bewaar ik elke versie, en Netlify zet de site automatisch online.</p>
+                        <p class="mt-6 text-sm text-slate-600"><strong class="text-slate-900">Tools:</strong> HTML, Tailwind CSS, VS Code, Git, GitHub, Netlify</p>
+                    </div>
+                    <p class="mt-8"><a href="#inhoud" class="rounded text-sm text-teal-700 underline hover:text-teal-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">Naar boven</a></p>
+                </section>
+
+                <section id="scripting" class="mt-12 border-t border-slate-200 pt-10">
+                    <p class="text-sm font-semibold uppercase tracking-widest text-teal-700">Project 3</p>
+                    <h2 class="mt-1 text-2xl font-semibold tracking-tight text-slate-900">Scripting</h2>
+                    <figure class="mt-6">
+                        <img src="assets/images/project-scripting.svg" alt="Terminalvenster met Linux-commando's voor gebruikers, groepen en rechten" width="1200" height="675" class="aspect-video w-full rounded-xl object-cover">
+                        <figcaption class="mt-2 text-sm text-slate-500">Gebruikers, groepen en rechten beheren op de commandline.</figcaption>
+                    </figure>
+                    <div class="max-w-2xl">
+                        <h3 class="mt-8 text-lg font-semibold text-slate-900">Projectbeschrijving</h3>
+                        <p class="mt-3 leading-relaxed">Voor deze opdracht heb ik met Linux gewerkt en verschillende systeembeheertaken uitgevoerd via commandline. Ik heb gebruikers aangemaakt, hun permissies beheerd, en shell scripts geschreven voor geautomatiseerde taken. Ik leerde hoe je met chmod en chown gebruikers- en groepsrechten toewijst en verwijdert, en hoe je scripts schrijft voor repetitieve processen. Dit project gaf mij waardevol inzicht in Linux systeembeheer, scriptautomatisering en veiligheid door juist rechtenbeheer.</p>
+                        <h3 class="mt-8 text-lg font-semibold text-slate-900">Projectinformatie</h3>
+                        <p class="mt-3 leading-relaxed">Dit project behandelt Linux commandline operaties en shell scripting. Ik heb ervaring opgedaan met user management, file permissions (chmod/chown), directory structures en het schrijven van Bash scripts voor geautomatiseerde systeemtaken. Het project demonstreert fundamentele Linux systeembeheer vaardigheden die essentieel zijn voor systeemadministratoren en developers. Scripts kunnen gebruikt worden voor backup, logging, monitoring en andere repetitieve taken.</p>
+                        <p class="mt-6 text-sm text-slate-600"><strong class="text-slate-900">Tools:</strong> Linux, Bash, chmod, chown</p>
+                    </div>
+                    <p class="mt-8"><a href="#inhoud" class="rounded text-sm text-teal-700 underline hover:text-teal-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">Naar boven</a></p>
+                </section>
 
                 <div class="mt-10 flex flex-col gap-3 sm:flex-row sm:justify-between">
                     <a href="portfolio.html" class="inline-flex w-full items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-3 font-semibold text-slate-900 hover:bg-slate-100 sm:w-auto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"><svg aria-hidden="true" class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg> Alle projecten</a>
-                    <a href="contact.html" class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-teal-400 px-5 py-3 font-semibold text-slate-900 hover:bg-teal-300 sm:w-auto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">Vragen over dit project? <svg aria-hidden="true" class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                    <a href="contact.html" class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-teal-400 px-5 py-3 font-semibold text-slate-900 hover:bg-teal-300 sm:w-auto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">Vragen over een project? <svg aria-hidden="true" class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
                 </div>
             </main>
             <aside class="space-y-8">
                 <section class="rounded-2xl bg-slate-100 p-6">
-                    <h2 class="text-lg font-semibold text-slate-900">Projectinfo</h2>
-                    <ul class="mt-4 space-y-2 text-sm">
-                        <li><strong class="text-slate-900">Datum:</strong> Oktober 2026</li>
-                        <li><strong class="text-slate-900">Rol:</strong> Individueel labo</li>
-                        <li><strong class="text-slate-900">Vak:</strong> Serverbeheer intro</li>
-                        <li><strong class="text-slate-900">Tools:</strong> VMware Workstation, Windows Server 2025, Windows 11</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2 class="text-lg font-semibold text-slate-900">Andere projecten</h2>
+                    <h2 class="text-lg font-semibold text-slate-900">Op deze pagina</h2>
                     <ul class="mt-3 space-y-2">
                         <li>
-                            <a href="project.html" class="flex items-center gap-3 rounded-lg p-1 hover:bg-slate-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">
-                                <img src="assets/images/project-active-directory.svg" alt="" width="1200" height="675" class="aspect-video w-24 shrink-0 rounded object-cover">
-                                <span class="text-sm font-semibold text-slate-900">Gebruikers en groepen in Active Directory</span>
+                            <a href="#serverbeheer" class="flex items-center gap-3 rounded-lg p-1 hover:bg-slate-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">
+                                <img src="assets/images/project-virtuele-serveromgeving.svg" alt="" width="1200" height="675" class="aspect-video w-24 shrink-0 rounded object-cover">
+                                <span class="text-sm font-semibold text-slate-900">Serverbeheer</span>
                             </a>
                         </li>
                         <li>
-                            <a href="project.html" class="flex items-center gap-3 rounded-lg p-1 hover:bg-slate-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">
-                                <img src="assets/images/project-packet-tracer.svg" alt="" width="1200" height="675" class="aspect-video w-24 shrink-0 rounded object-cover">
-                                <span class="text-sm font-semibold text-slate-900">Eerste netwerk in Packet Tracer</span>
+                            <a href="#webtechnologie" class="flex items-center gap-3 rounded-lg p-1 hover:bg-slate-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">
+                                <img src="assets/images/project-portfolio-website.svg" alt="" width="1200" height="675" class="aspect-video w-24 shrink-0 rounded object-cover">
+                                <span class="text-sm font-semibold text-slate-900">Webtechnologie</span>
                             </a>
                         </li>
                         <li>
-                            <a href="project.html" class="flex items-center gap-3 rounded-lg p-1 hover:bg-slate-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">
-                                <img src="assets/images/project-webserver-iis.svg" alt="" width="1200" height="675" class="aspect-video w-24 shrink-0 rounded object-cover">
-                                <span class="text-sm font-semibold text-slate-900">Een webserver met IIS</span>
+                            <a href="#scripting" class="flex items-center gap-3 rounded-lg p-1 hover:bg-slate-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">
+                                <img src="assets/images/project-scripting.svg" alt="" width="1200" height="675" class="aspect-video w-24 shrink-0 rounded object-cover">
+                                <span class="text-sm font-semibold text-slate-900">Scripting</span>
                             </a>
                         </li>
+                    </ul>
+                </section>
+                <section class="rounded-2xl bg-slate-100 p-6">
+                    <h2 class="text-lg font-semibold text-slate-900">Projectinfo</h2>
+                    <ul class="mt-4 space-y-2 text-sm">
+                    <li><strong class="text-slate-900">Opleiding:</strong> Graduaat Systeem- en netwerkbeheer</li>
+                    <li><strong class="text-slate-900">School:</strong> AP Hogeschool</li>
+                    <li><strong class="text-slate-900">Jaar:</strong> 2026–2027</li>
+                    <li><strong class="text-slate-900">Vakken:</strong> Serverbeheer, Webtechnologie, Scripting</li>
                     </ul>
                 </section>
             </aside>
