@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projecten — Mansour Karimi</title>
     <meta name="description" content="Zes projecten van Mansour Karimi over servers, netwerken en web: Active Directory, VMware, Packet Tracer en een webserver met IIS.">
-    <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
@@ -32,33 +31,16 @@
         </header>
         <div class="grid grid-cols-1 gap-10 py-8 lg:grid-cols-3">
             <main id="inhoud" class="lg:col-span-2">
-                <div class="group">
-                    <p class="text-sm font-semibold uppercase tracking-widest text-teal-700">Portfolio</p>
-                    <h1 class="mt-1 text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">Mijn projecten</h1>
-                    <p class="mt-3 max-w-2xl text-lg text-slate-600">Wat ik tot nu toe bouwde tijdens mijn opleiding en thuis. Kies een categorie om te filteren.</p>
-                    <fieldset class="mt-6">
-                        <legend class="sr-only">Filter de projecten</legend>
-                        <div class="flex flex-wrap gap-2">
-                            <span>
-                                <input type="radio" name="filter" id="filter-alle" class="peer sr-only" checked>
-                                <label for="filter-alle" class="inline-block cursor-pointer rounded-full border border-slate-300 px-4 py-1.5 text-sm hover:bg-slate-100 peer-checked:border-teal-400 peer-checked:bg-teal-400 peer-checked:font-semibold peer-checked:text-slate-900 peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-teal-600">alle</label>
-                            </span>
-                            <span>
-                                <input type="radio" name="filter" id="filter-netwerk" class="peer sr-only">
-                                <label for="filter-netwerk" class="inline-block cursor-pointer rounded-full border border-slate-300 px-4 py-1.5 text-sm hover:bg-slate-100 peer-checked:border-teal-400 peer-checked:bg-teal-400 peer-checked:font-semibold peer-checked:text-slate-900 peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-teal-600">netwerk</label>
-                            </span>
-                            <span>
-                                <input type="radio" name="filter" id="filter-servers" class="peer sr-only">
-                                <label for="filter-servers" class="inline-block cursor-pointer rounded-full border border-slate-300 px-4 py-1.5 text-sm hover:bg-slate-100 peer-checked:border-teal-400 peer-checked:bg-teal-400 peer-checked:font-semibold peer-checked:text-slate-900 peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-teal-600">servers</label>
-                            </span>
-                            <span>
-                                <input type="radio" name="filter" id="filter-web" class="peer sr-only">
-                                <label for="filter-web" class="inline-block cursor-pointer rounded-full border border-slate-300 px-4 py-1.5 text-sm hover:bg-slate-100 peer-checked:border-teal-400 peer-checked:bg-teal-400 peer-checked:font-semibold peer-checked:text-slate-900 peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-teal-600">web</label>
-                            </span>
-                        </div>
-                    </fieldset>
-                    <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    <article class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm group-has-[#filter-netwerk:checked]:hidden group-has-[#filter-web:checked]:hidden">
+                <p class="text-sm font-semibold uppercase tracking-widest text-teal-700">Portfolio</p>
+                <h1 class="mt-1 text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">Mijn projecten</h1>
+                <p class="mt-3 max-w-2xl text-lg text-slate-600">Wat ik tot nu toe bouwde tijdens mijn opleiding en thuis. Elk project heeft een label: netwerk, servers of web.</p>
+                <ul class="mt-6 flex flex-wrap gap-2">
+                    <li class="rounded-full bg-slate-900 px-4 py-1.5 text-sm font-semibold text-white">netwerk</li>
+                    <li class="rounded-full bg-slate-900 px-4 py-1.5 text-sm font-semibold text-white">servers</li>
+                    <li class="rounded-full bg-slate-900 px-4 py-1.5 text-sm font-semibold text-white">web</li>
+                </ul>
+                <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    <article class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
                         <img src="assets/images/project-virtuele-serveromgeving.svg" alt="Schema van server DC01 met de clients CL01 en CL02 in VMware" width="1200" height="675" class="aspect-video w-full object-cover">
                         <div class="p-4">
                             <p class="text-xs font-semibold uppercase tracking-widest text-teal-700">servers</p>
@@ -66,7 +48,7 @@
                             <p class="mt-1 text-sm leading-relaxed text-slate-600">Een kleine bedrijfsomgeving in VMware: een domeincontroller met Windows Server 2025 en twee clients met Windows 11.</p>
                         </div>
                     </article>
-                    <article class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm group-has-[#filter-netwerk:checked]:hidden group-has-[#filter-web:checked]:hidden">
+                    <article class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
                         <img src="assets/images/project-active-directory.svg" alt="Schema van het domein mansour.local met drie organisatie-eenheden" width="1200" height="675" class="aspect-video w-full object-cover">
                         <div class="p-4">
                             <p class="text-xs font-semibold uppercase tracking-widest text-teal-700">servers</p>
@@ -74,7 +56,7 @@
                             <p class="mt-1 text-sm leading-relaxed text-slate-600">Organisatie-eenheden, gebruikers en groepen voor een fictief bedrijf.</p>
                         </div>
                     </article>
-                    <article class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm group-has-[#filter-servers:checked]:hidden group-has-[#filter-web:checked]:hidden">
+                    <article class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
                         <img src="assets/images/project-thuisnetwerk.svg" alt="Netwerkschema: router met laptop, gsm, printer en smart-tv" width="1200" height="675" class="aspect-video w-full object-cover">
                         <div class="p-4">
                             <p class="text-xs font-semibold uppercase tracking-widest text-teal-700">netwerk</p>
@@ -82,7 +64,7 @@
                             <p class="mt-1 text-sm leading-relaxed text-slate-600">Alle toestellen thuis opgelijst, met een IP-plan en een netwerkschema.</p>
                         </div>
                     </article>
-                    <article class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm group-has-[#filter-servers:checked]:hidden group-has-[#filter-web:checked]:hidden">
+                    <article class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
                         <img src="assets/images/project-packet-tracer.svg" alt="Netwerkschema met router R1, switches SW1 en SW2 en vier pc's" width="1200" height="675" class="aspect-video w-full object-cover">
                         <div class="p-4">
                             <p class="text-xs font-semibold uppercase tracking-widest text-teal-700">netwerk</p>
@@ -90,7 +72,7 @@
                             <p class="mt-1 text-sm leading-relaxed text-slate-600">Een router, twee switches en vier pc's verbonden en getest met ping.</p>
                         </div>
                     </article>
-                    <article class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm group-has-[#filter-netwerk:checked]:hidden group-has-[#filter-servers:checked]:hidden">
+                    <article class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
                         <img src="assets/images/project-portfolio-website.svg" alt="Schets van de startpagina van deze website" width="1200" height="675" class="aspect-video w-full object-cover">
                         <div class="p-4">
                             <p class="text-xs font-semibold uppercase tracking-widest text-teal-700">web</p>
@@ -98,7 +80,7 @@
                             <p class="mt-1 text-sm leading-relaxed text-slate-600">Deze website, gebouwd met HTML en Tailwind CSS vanuit mijn eigen wireframes.</p>
                         </div>
                     </article>
-                    <article class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm group-has-[#filter-netwerk:checked]:hidden group-has-[#filter-servers:checked]:hidden">
+                    <article class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
                         <img src="assets/images/project-webserver-iis.svg" alt="Schema van een browser die verbindt met webserver web01" width="1200" height="675" class="aspect-video w-full object-cover">
                         <div class="p-4">
                             <p class="text-xs font-semibold uppercase tracking-widest text-teal-700">web</p>
@@ -106,7 +88,6 @@
                             <p class="mt-1 text-sm leading-relaxed text-slate-600">IIS op Windows Server geïnstalleerd en een eerste webpagina gepubliceerd in het testnetwerk.</p>
                         </div>
                     </article>
-                    </div>
                 </div>
             </main>
             <aside class="space-y-8">
@@ -140,7 +121,7 @@
         <footer class="mb-6 flex flex-col gap-4 rounded-2xl bg-slate-900 p-6 text-slate-100 sm:flex-row sm:items-center sm:justify-between">
             <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
                 <img src="assets/images/logo.svg" alt="" width="100" height="100" class="size-10 rounded-xl ring-1 ring-slate-600">
-                <p class="text-sm text-slate-300">&copy; 2026 Mansour Karimi · <a href="mailto:mansourkarimi@student.ap.be" class="rounded underline hover:text-teal-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">mansourkarimi@student.ap.be</a> · <a href="tel:+32467646561" class="whitespace-nowrap rounded underline hover:text-teal-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">0467&nbsp;64&nbsp;65&nbsp;61</a></p>
+                <p class="text-sm text-slate-300">&copy; 2026 Mansour Karimi · <a href="mailto:mansourkarimi@student.ap.be" class="rounded underline hover:text-teal-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">mansourkarimi@student.ap.be</a> · <a href="tel:+32467646561" class="rounded underline hover:text-teal-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">0467 64 65 61</a></p>
             </div>
             <div class="flex gap-2">
                 <a href="mailto:mansourkarimi@student.ap.be" class="inline-flex size-10 items-center justify-center rounded-full border border-slate-600 text-slate-100 hover:border-teal-400 hover:bg-teal-400 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"><svg aria-hidden="true" class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><span class="sr-only">Stuur me een e-mail</span></a>
