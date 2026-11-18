@@ -1,6 +1,16 @@
-/* Eigen CSS van mijn portfolio */
+/* ========== EIGEN CSS VAN MIJN PORTFOLIO ========== */
 
 /* Lettertype: Inter van Google Fonts, met een reserve */
 body {
-    font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+/* Zelfde zichtbare focusrand voor alle links, knoppen en velden */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #0d9488;
+  outline-offset: 2px;
 }

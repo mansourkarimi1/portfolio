@@ -1,153 +1,154 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projecten in detail — Mansour Karimi</title>
-    <meta name="description" content="Drie projecten van Mansour Karimi: serverbeheer met VMware en Active Directory, webtechnologie met deze website, en scripting in Linux.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/tailwind.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projecten in detail — Mansour Karimi</title>
+  <meta name="description" content="Drie projecten van Mansour Karimi: serverbeheer met VMware en Active Directory, webtechnologie met deze website, en scripting in Linux.">
+  <!-- Lettertype Inter van Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
+  <!-- Tailwind (gebouwd met de CLI) en daarna mijn eigen CSS -->
+  <link rel="stylesheet" href="css/tailwind.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-white text-slate-700">
-    <a href="#inhoud" class="sr-only rounded-lg bg-slate-900 px-4 py-2 font-semibold text-white focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">Ga naar de inhoud</a>
-    <div class="mx-auto max-w-6xl px-4">
-        <header class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 py-4">
-            <a href="index.html" class="rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">
-                <img src="assets/images/logo-horizontaal.svg" alt="Mansour Karimi, naar de startpagina" width="300" height="80" class="h-10 w-auto">
-            </a>
-            <input type="checkbox" id="menu-knop" class="peer sr-only">
-            <label for="menu-knop" class="cursor-pointer rounded-lg border border-slate-300 px-4 py-2 font-semibold text-slate-900 hover:bg-slate-100 peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-teal-600 md:hidden">☰ Menu</label>
-            <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block lg:w-auto">
-                <ul class="flex flex-col gap-1 md:flex-row md:flex-wrap">
-                    <li><a href="index.html" class="block rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">Home</a></li>
-                    <li><a href="portfolio.html" class="block rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">Portfolio</a></li>
-                    <li><a href="project.html" aria-current="page" class="block rounded-lg bg-teal-50 px-3 py-2 font-semibold text-teal-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">Project</a></li>
-                    <li><a href="contact.html" class="block rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="grid grid-cols-1 gap-10 py-8 lg:grid-cols-3">
-            <main id="inhoud" class="lg:col-span-2">
-                <p class="text-sm font-semibold uppercase tracking-widest text-teal-700">Projecten</p>
-                <h1 class="mt-1 text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">Mijn projecten in detail</h1>
-                <p class="mt-3 max-w-2xl text-lg text-slate-600">Hier lees je per project wat ik maakte en wat ik ervan leerde.</p>
+  <!-- Skiplink: verschijnt pas als je op Tab drukt -->
+  <a href="#inhoud" class="sr-only focus:not-sr-only">Ga naar de inhoud</a>
 
-                <section id="serverbeheer" class="mt-12 border-t border-slate-200 pt-10">
-                    <p class="text-sm font-semibold uppercase tracking-widest text-teal-700">Project 1</p>
-                    <h2 class="mt-1 text-2xl font-semibold tracking-tight text-slate-900">Serverbeheer</h2>
-                    <figure class="mt-6">
-                        <img src="assets/images/project-virtuele-serveromgeving.svg" alt="Schema van server DC01 met de clients CL01 en CL02 in VMware" width="1200" height="675" class="aspect-video w-full rounded-xl object-cover">
-                        <figcaption class="mt-2 text-sm text-slate-500">De opbouw: één centrale server en twee clients in hetzelfde virtuele netwerk.</figcaption>
-                    </figure>
-                    <figure class="mt-6">
-                        <img src="assets/images/project-dc01-rollen.svg" alt="Schema van DC01 met de rollen AD DS, DNS en DHCP" width="1200" height="675" class="aspect-video w-full rounded-xl object-cover">
-                        <figcaption class="mt-2 text-sm text-slate-500">De drie belangrijkste diensten op de server.</figcaption>
-                    </figure>
-                    <figure class="mt-6">
-                        <img src="assets/images/project-domein-toevoegen.svg" alt="Vijf stappen om een client aan het domein toe te voegen" width="1200" height="675" class="aspect-video w-full rounded-xl object-cover">
-                        <figcaption class="mt-2 text-sm text-slate-500">De stappen om een client lid te maken van het domein.</figcaption>
-                    </figure>
-                    <div class="max-w-2xl">
-                        <h3 class="mt-8 text-lg font-semibold text-slate-900">Projectbeschrijving</h3>
-                        <p class="mt-3 leading-relaxed">Voor deze opdracht heb ik een gesimuleerd bedrijfsnetwerk opgezet met meerdere virtuele machines in VMware Workstation Pro. Eén centrale server met Windows Server 2025 beheert het netwerk, en verschillende clients met Windows 11 zijn ermee verbonden. Zo kan ik alles vanuit één punt beheren, net zoals in een echt bedrijf.</p>
-                        <p class="mt-3 leading-relaxed">Eerst heb ik de virtuele machines aangemaakt en in een eigen intern netwerk gezet. Daarna heb ik Windows Server 2025 geïnstalleerd en de server gepromoveerd tot domeincontroller voor het domein mansour.local. Met Active Directory heb ik organisatie-eenheden, gebruikers en groepen aangemaakt. DNS zorgt ervoor dat de clients het domein vinden, en DHCP geeft ze automatisch een IP-adres.</p>
-                        <p class="mt-3 leading-relaxed">Ten slotte heb ik de clients lid gemaakt van het domein en me aangemeld met een domeingebruiker. Het lastigste was DNS: zolang de clients de server niet als DNS-server gebruikten, vonden ze het domein niet. Toen dat opgelost was, werkte de rest vlot.</p>
-                        <h3 class="mt-8 text-lg font-semibold text-slate-900">Projectinformatie</h3>
-                        <p class="mt-3 leading-relaxed">Dit project behandelt de basis van serverbeheer in een Windows-omgeving: virtualisatie, Active Directory, DNS en DHCP. Ik heb ervaring opgedaan met het opzetten van een domein, het beheren van gebruikers en groepen, en het koppelen van clients aan een centrale server.</p>
-                        <p class="mt-3 leading-relaxed">Zo'n opstelling vormt de basis van bijna elk bedrijfsnetwerk. Doordat alles virtueel draait, kan ik veilig testen en fouten maken zonder echte toestellen of een echt netwerk te raken.</p>
-                        <p class="mt-6 text-sm text-slate-600"><strong class="text-slate-900">Tools:</strong> VMware Workstation Pro, Windows Server 2025, Active Directory, DNS, DHCP, Windows 11</p>
-                    </div>
-                    <p class="mt-8"><a href="#inhoud" class="rounded text-sm text-teal-700 underline hover:text-teal-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">Naar boven</a></p>
-                </section>
+  <!-- Buitenste blok: alles staat in het midden, maximaal 72rem breed -->
+  <div class="mx-auto max-w-6xl px-4">
 
-                <section id="webtechnologie" class="mt-12 border-t border-slate-200 pt-10">
-                    <p class="text-sm font-semibold uppercase tracking-widest text-teal-700">Project 2</p>
-                    <h2 class="mt-1 text-2xl font-semibold tracking-tight text-slate-900">Webtechnologie</h2>
-                    <figure class="mt-6">
-                        <img src="assets/images/project-portfolio-website.svg" alt="Schets van de startpagina van deze website" width="1200" height="675" class="aspect-video w-full rounded-xl object-cover">
-                        <figcaption class="mt-2 text-sm text-slate-500">De startpagina van deze website, zoals ik ze in mijn wireframe tekende.</figcaption>
-                    </figure>
-                    <div class="max-w-2xl">
-                        <h3 class="mt-8 text-lg font-semibold text-slate-900">Projectbeschrijving</h3>
-                        <p class="mt-3 leading-relaxed">Voor deze opdracht heb ik de website gebouwd die je nu bekijkt. Ik begon met inspiratie en wireframes, en bouwde daarna elke week een stuk verder: de pagina's in HTML, de opmaak met Tailwind CSS, een menu voor de gsm, een contactformulier en ten slotte het online zetten.</p>
-                        <h3 class="mt-8 text-lg font-semibold text-slate-900">Projectinformatie</h3>
-                        <p class="mt-3 leading-relaxed">Dit project behandelt HTML, Tailwind CSS, responsive design, formulieren en toegankelijkheid. De site werkt op gsm, tablet en laptop, en is ook met alleen het toetsenbord te gebruiken. Met Git en GitHub bewaar ik elke versie, en Netlify zet de site automatisch online.</p>
-                        <p class="mt-6 text-sm text-slate-600"><strong class="text-slate-900">Tools:</strong> HTML, Tailwind CSS, VS Code, Git, GitHub, Netlify</p>
-                    </div>
-                    <p class="mt-8"><a href="#inhoud" class="rounded text-sm text-teal-700 underline hover:text-teal-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">Naar boven</a></p>
-                </section>
+    <!-- Header + navigatie -->
+    <header class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200 py-4">
+      <!-- Logo -->
+      <a href="index.html">
+        <img src="assets/images/logo-horizontaal.svg" alt="Mansour Karimi, naar de startpagina" width="300" height="80" class="h-10 w-auto">
+      </a>
 
-                <section id="scripting" class="mt-12 border-t border-slate-200 pt-10">
-                    <p class="text-sm font-semibold uppercase tracking-widest text-teal-700">Project 3</p>
-                    <h2 class="mt-1 text-2xl font-semibold tracking-tight text-slate-900">Scripting</h2>
-                    <figure class="mt-6">
-                        <img src="assets/images/project-scripting.svg" alt="Terminalvenster met Linux-commando's voor gebruikers, groepen en rechten" width="1200" height="675" class="aspect-video w-full rounded-xl object-cover">
-                        <figcaption class="mt-2 text-sm text-slate-500">Gebruikers, groepen en rechten beheren op de commandline.</figcaption>
-                    </figure>
-                    <div class="max-w-2xl">
-                        <h3 class="mt-8 text-lg font-semibold text-slate-900">Projectbeschrijving</h3>
-                        <p class="mt-3 leading-relaxed">Voor deze opdracht heb ik met Linux gewerkt en verschillende systeembeheertaken uitgevoerd via commandline. Ik heb gebruikers aangemaakt, hun permissies beheerd, en shell scripts geschreven voor geautomatiseerde taken. Ik leerde hoe je met chmod en chown gebruikers- en groepsrechten toewijst en verwijdert, en hoe je scripts schrijft voor repetitieve processen. Dit project gaf mij waardevol inzicht in Linux systeembeheer, scriptautomatisering en veiligheid door juist rechtenbeheer.</p>
-                        <h3 class="mt-8 text-lg font-semibold text-slate-900">Projectinformatie</h3>
-                        <p class="mt-3 leading-relaxed">Dit project behandelt Linux commandline operaties en shell scripting. Ik heb ervaring opgedaan met user management, file permissions (chmod/chown), directory structures en het schrijven van Bash scripts voor geautomatiseerde systeemtaken. Het project demonstreert fundamentele Linux systeembeheer vaardigheden die essentieel zijn voor systeemadministratoren en developers. Scripts kunnen gebruikt worden voor backup, logging, monitoring en andere repetitieve taken.</p>
-                        <p class="mt-6 text-sm text-slate-600"><strong class="text-slate-900">Tools:</strong> Linux, Bash, chmod, chown</p>
-                    </div>
-                    <p class="mt-8"><a href="#inhoud" class="rounded text-sm text-teal-700 underline hover:text-teal-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">Naar boven</a></p>
-                </section>
+      <!-- Menuknop voor de gsm: een verborgen checkbox met een label (zonder JavaScript) -->
+      <input type="checkbox" id="menu-knop" class="peer sr-only">
+      <label for="menu-knop" class="cursor-pointer rounded border border-slate-300 px-4 py-2 peer-focus-visible:outline-2 md:hidden">☰ Menu</label>
 
-                <div class="mt-10 flex flex-col gap-3 sm:flex-row sm:justify-between">
-                    <a href="portfolio.html" class="inline-flex w-full items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-3 font-semibold text-slate-900 hover:bg-slate-100 sm:w-auto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"><svg aria-hidden="true" class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg> Alle projecten</a>
-                    <a href="contact.html" class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-teal-400 px-5 py-3 font-semibold text-slate-900 hover:bg-teal-300 sm:w-auto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">Vragen over een project? <svg aria-hidden="true" class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
-                </div>
-            </main>
-            <aside class="space-y-8">
-                <section class="rounded-2xl bg-slate-100 p-6">
-                    <h2 class="text-lg font-semibold text-slate-900">Op deze pagina</h2>
-                    <ul class="mt-3 space-y-2">
-                        <li>
-                            <a href="#serverbeheer" class="flex items-center gap-3 rounded-lg p-1 hover:bg-slate-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">
-                                <img src="assets/images/project-virtuele-serveromgeving.svg" alt="" width="1200" height="675" class="aspect-video w-24 shrink-0 rounded object-cover">
-                                <span class="text-sm font-semibold text-slate-900">Serverbeheer</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#webtechnologie" class="flex items-center gap-3 rounded-lg p-1 hover:bg-slate-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">
-                                <img src="assets/images/project-portfolio-website.svg" alt="" width="1200" height="675" class="aspect-video w-24 shrink-0 rounded object-cover">
-                                <span class="text-sm font-semibold text-slate-900">Webtechnologie</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#scripting" class="flex items-center gap-3 rounded-lg p-1 hover:bg-slate-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">
-                                <img src="assets/images/project-scripting.svg" alt="" width="1200" height="675" class="aspect-video w-24 shrink-0 rounded object-cover">
-                                <span class="text-sm font-semibold text-slate-900">Scripting</span>
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-                <section class="rounded-2xl bg-slate-100 p-6">
-                    <h2 class="text-lg font-semibold text-slate-900">Projectinfo</h2>
-                    <ul class="mt-4 space-y-2 text-sm">
-                    <li><strong class="text-slate-900">Opleiding:</strong> Graduaat Systeem- en netwerkbeheer</li>
-                    <li><strong class="text-slate-900">School:</strong> AP Hogeschool</li>
-                    <li><strong class="text-slate-900">Jaar:</strong> 2026–2027</li>
-                    <li><strong class="text-slate-900">Vakken:</strong> Serverbeheer, Webtechnologie, Scripting</li>
-                    </ul>
-                </section>
-            </aside>
+      <!-- Menu: verborgen op de gsm, zichtbaar als de checkbox aangevinkt is en altijd vanaf md -->
+      <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto">
+        <ul class="flex flex-col gap-3 md:flex-row md:gap-6">
+          <li><a href="index.html" class="hover:text-teal-700">Home</a></li>
+          <li><a href="portfolio.html" class="hover:text-teal-700">Portfolio</a></li>
+          <li><a href="project.html" aria-current="page" class="font-semibold text-teal-700 underline">Project</a></li>
+          <li><a href="contact.html" class="hover:text-teal-700">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Inhoud: main en aside naast elkaar op een laptop, onder elkaar op tablet en gsm -->
+    <div class="grid gap-10 py-8 lg:grid-cols-3">
+
+      <!-- Main -->
+      <main id="inhoud" class="lg:col-span-2">
+        <p class="text-sm font-semibold uppercase tracking-widest text-teal-700">Projecten</p>
+        <h1 class="mt-1 text-4xl font-semibold text-slate-900">Mijn projecten in detail</h1>
+        <p class="mt-3 text-lg text-slate-600">Hier lees je per project wat ik maakte en wat ik ervan leerde.</p>
+
+        <!-- Project 1: Serverbeheer -->
+        <section id="serverbeheer" class="mt-12 border-t border-slate-200 pt-10">
+          <p class="text-sm font-semibold uppercase tracking-widest text-teal-700">Project 1</p>
+          <h2 class="mt-1 text-2xl font-semibold text-slate-900">Serverbeheer</h2>
+          <figure class="mt-6">
+            <img src="assets/images/project-virtuele-serveromgeving.svg" alt="Schema van server DC01 met de clients CL01 en CL02 in VMware" width="1200" height="675" class="aspect-video w-full rounded-xl object-cover">
+            <figcaption class="mt-2 text-sm text-slate-500">De opbouw: één centrale server en twee clients in hetzelfde virtuele netwerk.</figcaption>
+          </figure>
+          <figure class="mt-6">
+            <img src="assets/images/project-dc01-rollen.svg" alt="Schema van DC01 met de rollen AD DS, DNS en DHCP" width="1200" height="675" class="aspect-video w-full rounded-xl object-cover">
+            <figcaption class="mt-2 text-sm text-slate-500">De drie belangrijkste diensten op de server.</figcaption>
+          </figure>
+          <figure class="mt-6">
+            <img src="assets/images/project-domein-toevoegen.svg" alt="Vijf stappen om een client aan het domein toe te voegen" width="1200" height="675" class="aspect-video w-full rounded-xl object-cover">
+            <figcaption class="mt-2 text-sm text-slate-500">De stappen om een client lid te maken van het domein.</figcaption>
+          </figure>
+          <h3 class="mt-8 text-lg font-semibold text-slate-900">Projectbeschrijving</h3>
+          <p class="mt-3">Voor deze opdracht heb ik een gesimuleerd bedrijfsnetwerk opgezet met meerdere virtuele machines in VMware Workstation Pro. Eén centrale server met Windows Server 2025 beheert het netwerk, en verschillende clients met Windows 11 zijn ermee verbonden. Zo kan ik alles vanuit één punt beheren, net zoals in een echt bedrijf.</p>
+          <p class="mt-3">Eerst heb ik de virtuele machines aangemaakt en in een eigen intern netwerk gezet. Daarna heb ik Windows Server 2025 geïnstalleerd en de server gepromoveerd tot domeincontroller voor het domein mansour.local. Met Active Directory heb ik organisatie-eenheden, gebruikers en groepen aangemaakt. DNS zorgt ervoor dat de clients het domein vinden, en DHCP geeft ze automatisch een IP-adres.</p>
+          <p class="mt-3">Ten slotte heb ik de clients lid gemaakt van het domein en me aangemeld met een domeingebruiker. Het lastigste was DNS: zolang de clients de server niet als DNS-server gebruikten, vonden ze het domein niet. Toen dat opgelost was, werkte de rest vlot.</p>
+          <h3 class="mt-8 text-lg font-semibold text-slate-900">Projectinformatie</h3>
+          <p class="mt-3">Dit project behandelt de basis van serverbeheer in een Windows-omgeving: virtualisatie, Active Directory, DNS en DHCP. Ik heb ervaring opgedaan met het opzetten van een domein, het beheren van gebruikers en groepen, en het koppelen van clients aan een centrale server.</p>
+          <p class="mt-3">Zo'n opstelling vormt de basis van bijna elk bedrijfsnetwerk. Doordat alles virtueel draait, kan ik veilig testen en fouten maken zonder echte toestellen of een echt netwerk te raken.</p>
+          <p class="mt-6 text-sm"><strong class="text-slate-900">Tools:</strong> VMware Workstation Pro, Windows Server 2025, Active Directory, DNS, DHCP, Windows 11</p>
+          <p class="mt-6"><a href="#inhoud" class="text-sm text-teal-700 underline">Naar boven</a></p>
+        </section>
+
+        <!-- Project 2: Webtechnologie -->
+        <section id="webtechnologie" class="mt-12 border-t border-slate-200 pt-10">
+          <p class="text-sm font-semibold uppercase tracking-widest text-teal-700">Project 2</p>
+          <h2 class="mt-1 text-2xl font-semibold text-slate-900">Webtechnologie</h2>
+          <figure class="mt-6">
+            <img src="assets/images/project-portfolio-website.svg" alt="Schets van de startpagina van deze website" width="1200" height="675" class="aspect-video w-full rounded-xl object-cover">
+            <figcaption class="mt-2 text-sm text-slate-500">De startpagina van deze website, zoals ik ze in mijn wireframe tekende.</figcaption>
+          </figure>
+          <h3 class="mt-8 text-lg font-semibold text-slate-900">Projectbeschrijving</h3>
+          <p class="mt-3">Voor deze opdracht heb ik de website gebouwd die je nu bekijkt. Ik begon met inspiratie en wireframes, en bouwde daarna elke week een stuk verder: de pagina's in HTML, de opmaak met Tailwind CSS, een menu voor de gsm, een contactformulier en ten slotte het online zetten.</p>
+          <h3 class="mt-8 text-lg font-semibold text-slate-900">Projectinformatie</h3>
+          <p class="mt-3">Dit project behandelt HTML, Tailwind CSS, responsive design, formulieren en toegankelijkheid. De site werkt op gsm, tablet en laptop, en is ook met alleen het toetsenbord te gebruiken. Met Git en GitHub bewaar ik elke versie, en Netlify zet de site automatisch online.</p>
+          <p class="mt-6 text-sm"><strong class="text-slate-900">Tools:</strong> HTML, Tailwind CSS, VS Code, Git, GitHub, Netlify</p>
+          <p class="mt-6"><a href="#inhoud" class="text-sm text-teal-700 underline">Naar boven</a></p>
+        </section>
+
+        <!-- Project 3: Scripting -->
+        <section id="scripting" class="mt-12 border-t border-slate-200 pt-10">
+          <p class="text-sm font-semibold uppercase tracking-widest text-teal-700">Project 3</p>
+          <h2 class="mt-1 text-2xl font-semibold text-slate-900">Scripting</h2>
+          <figure class="mt-6">
+            <img src="assets/images/project-scripting.svg" alt="Terminalvenster met Linux-commando's voor gebruikers, groepen en rechten" width="1200" height="675" class="aspect-video w-full rounded-xl object-cover">
+            <figcaption class="mt-2 text-sm text-slate-500">Gebruikers, groepen en rechten beheren op de commandline.</figcaption>
+          </figure>
+          <h3 class="mt-8 text-lg font-semibold text-slate-900">Projectbeschrijving</h3>
+          <p class="mt-3">Voor deze opdracht heb ik met Linux gewerkt en verschillende systeembeheertaken uitgevoerd via commandline. Ik heb gebruikers aangemaakt, hun permissies beheerd, en shell scripts geschreven voor geautomatiseerde taken. Ik leerde hoe je met chmod en chown gebruikers- en groepsrechten toewijst en verwijdert, en hoe je scripts schrijft voor repetitieve processen. Dit project gaf mij waardevol inzicht in Linux systeembeheer, scriptautomatisering en veiligheid door juist rechtenbeheer.</p>
+          <h3 class="mt-8 text-lg font-semibold text-slate-900">Projectinformatie</h3>
+          <p class="mt-3">Dit project behandelt Linux commandline operaties en shell scripting. Ik heb ervaring opgedaan met user management, file permissions (chmod/chown), directory structures en het schrijven van Bash scripts voor geautomatiseerde systeemtaken. Het project demonstreert fundamentele Linux systeembeheer vaardigheden die essentieel zijn voor systeemadministratoren en developers. Scripts kunnen gebruikt worden voor backup, logging, monitoring en andere repetitieve taken.</p>
+          <p class="mt-6 text-sm"><strong class="text-slate-900">Tools:</strong> Linux, Bash, chmod, chown</p>
+          <p class="mt-6"><a href="#inhoud" class="text-sm text-teal-700 underline">Naar boven</a></p>
+        </section>
+
+        <!-- Knoppen onderaan -->
+        <div class="mt-10 flex flex-wrap justify-between gap-3">
+          <a href="portfolio.html" class="inline-block rounded-full border border-slate-300 px-5 py-3 font-semibold text-slate-900 hover:bg-slate-100">← Alle projecten</a>
+          <a href="contact.html" class="inline-block rounded-full bg-teal-400 px-5 py-3 font-semibold text-slate-900 hover:bg-teal-300">Vragen over een project? →</a>
         </div>
-        <footer class="mb-6 flex flex-col gap-4 rounded-2xl bg-slate-900 p-6 text-slate-100 sm:flex-row sm:items-center sm:justify-between">
-            <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
-                <img src="assets/images/logo.svg" alt="" width="100" height="100" class="size-10 rounded-xl ring-1 ring-slate-600">
-                <p class="text-sm text-slate-300">&copy; 2026 Mansour Karimi · <a href="mailto:mansourkarimi@student.ap.be" class="rounded underline hover:text-teal-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">mansourkarimi@student.ap.be</a> · <a href="tel:+32467646561" class="rounded underline hover:text-teal-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">0467 64 65 61</a></p>
-            </div>
-            <div class="flex gap-2">
-                <a href="mailto:mansourkarimi@student.ap.be" class="inline-flex size-10 items-center justify-center rounded-full border border-slate-600 text-slate-100 hover:border-teal-400 hover:bg-teal-400 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"><svg aria-hidden="true" class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><span class="sr-only">Stuur me een e-mail</span></a>
-                <a href="tel:+32467646561" class="inline-flex size-10 items-center justify-center rounded-full border border-slate-600 text-slate-100 hover:border-teal-400 hover:bg-teal-400 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"><svg aria-hidden="true" class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="sr-only">Bel me</span></a>
-                <a href="contact.html" class="inline-flex size-10 items-center justify-center rounded-full border border-slate-600 text-slate-100 hover:border-teal-400 hover:bg-teal-400 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"><svg aria-hidden="true" class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span class="sr-only">Naar de contactpagina</span></a>
-            </div>
-        </footer>
+      </main>
+
+      <!-- Aside -->
+      <aside class="space-y-8">
+        <!-- Links naar de projecten op deze pagina -->
+        <section class="rounded-2xl bg-slate-100 p-6">
+          <h2 class="text-lg font-semibold text-slate-900">Op deze pagina</h2>
+          <ul class="mt-3 space-y-2">
+            <li><a href="#serverbeheer" class="text-teal-700 underline">Project 1: Serverbeheer</a></li>
+            <li><a href="#webtechnologie" class="text-teal-700 underline">Project 2: Webtechnologie</a></li>
+            <li><a href="#scripting" class="text-teal-700 underline">Project 3: Scripting</a></li>
+          </ul>
+        </section>
+
+        <!-- Projectinfo -->
+        <section class="rounded-2xl bg-slate-100 p-6">
+          <h2 class="text-lg font-semibold text-slate-900">Projectinfo</h2>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li><strong class="text-slate-900">Opleiding:</strong> Graduaat Systeem- en netwerkbeheer</li>
+            <li><strong class="text-slate-900">School:</strong> AP Hogeschool</li>
+            <li><strong class="text-slate-900">Jaar:</strong> 2026–2027</li>
+          </ul>
+        </section>
+      </aside>
+
     </div>
+
+    <!-- Footer -->
+    <footer class="mb-6 rounded-xl bg-slate-900 p-6 text-sm text-slate-300">
+      <p>&copy; 2026 Mansour Karimi · <a href="mailto:mansourkarimi@student.ap.be" class="underline hover:text-teal-300">mansourkarimi@student.ap.be</a> · <a href="tel:+32467646561" class="underline hover:text-teal-300">0467 64 65 61</a></p>
+    </footer>
+
+  </div>
 </body>
+
 </html>
