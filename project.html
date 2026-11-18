@@ -16,29 +16,29 @@
 </head>
 <body class="bg-white text-slate-700">
   <!-- Skiplink: verschijnt pas als je op Tab drukt -->
-  <a href="#inhoud" class="sr-only focus:not-sr-only">Ga naar de inhoud</a>
+  <a href="#inhoud" class="sr-only focus:not-sr-only focus:absolute focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700">Ga naar de inhoud</a>
 
   <!-- Buitenste blok: alles staat in het midden, maximaal 72rem breed -->
   <div class="mx-auto max-w-6xl px-4">
 
     <!-- Header + navigatie -->
-    <header class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200 py-4">
+    <header class="flex flex-wrap items-center justify-between gap-4 py-4">
       <!-- Logo -->
-      <a href="index.html">
-        <img src="assets/images/logo-horizontaal.svg" alt="Mansour Karimi, naar de startpagina" width="300" height="80" class="h-10 w-auto">
+      <a href="index.html" class="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700">
+        <img src="assets/images/logo-horizontaal.svg" alt="Mansour Karimi, naar de startpagina" width="150" height="40">
       </a>
 
       <!-- Menuknop voor de gsm: een verborgen checkbox met een label (zonder JavaScript) -->
       <input type="checkbox" id="menu-knop" class="peer sr-only">
-      <label for="menu-knop" class="cursor-pointer rounded border border-slate-300 px-4 py-2 peer-focus-visible:outline-2 md:hidden">☰ Menu</label>
+      <label for="menu-knop" class="rounded border border-slate-300 px-4 py-2 peer-focus-visible:outline-2 peer-focus-visible:outline-teal-700 md:hidden">☰ Menu</label>
 
       <!-- Menu: verborgen op de gsm, zichtbaar als de checkbox aangevinkt is en altijd vanaf md -->
       <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto">
         <ul class="flex flex-col gap-3 md:flex-row md:gap-6">
-          <li><a href="index.html" class="hover:text-teal-700">Home</a></li>
-          <li><a href="portfolio.html" class="hover:text-teal-700">Portfolio</a></li>
-          <li><a href="project.html" aria-current="page" class="font-semibold text-teal-700 underline">Project</a></li>
-          <li><a href="contact.html" class="hover:text-teal-700">Contact</a></li>
+          <li><a href="index.html" class="hover:text-teal-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700">Home</a></li>
+          <li><a href="portfolio.html" class="hover:text-teal-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700">Portfolio</a></li>
+          <li><a href="project.html" aria-current="page" class="font-semibold text-teal-700 underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700">Project</a></li>
+          <li><a href="contact.html" class="hover:text-teal-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -53,7 +53,7 @@
         <p class="mt-3 text-lg text-slate-600">Hier lees je per project wat ik maakte en wat ik ervan leerde.</p>
 
         <!-- Project 1: Serverbeheer -->
-        <section id="serverbeheer" class="mt-12 border-t border-slate-200 pt-10">
+        <section id="serverbeheer" class="mt-12">
           <p class="text-sm font-semibold uppercase tracking-widest text-teal-700">Project 1</p>
           <h2 class="mt-1 text-2xl font-semibold text-slate-900">Serverbeheer</h2>
           <figure class="mt-6">
@@ -76,11 +76,11 @@
           <p class="mt-3">Dit project behandelt de basis van serverbeheer in een Windows-omgeving: virtualisatie, Active Directory, DNS en DHCP. Ik heb ervaring opgedaan met het opzetten van een domein, het beheren van gebruikers en groepen, en het koppelen van clients aan een centrale server.</p>
           <p class="mt-3">Zo'n opstelling vormt de basis van bijna elk bedrijfsnetwerk. Doordat alles virtueel draait, kan ik veilig testen en fouten maken zonder echte toestellen of een echt netwerk te raken.</p>
           <p class="mt-6 text-sm"><strong class="text-slate-900">Tools:</strong> VMware Workstation Pro, Windows Server 2025, Active Directory, DNS, DHCP, Windows 11</p>
-          <p class="mt-6"><a href="#inhoud" class="text-sm text-teal-700 underline">Naar boven</a></p>
+          <p class="mt-6"><a href="#inhoud" class="text-sm text-teal-700 underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700">Naar boven</a></p>
         </section>
 
         <!-- Project 2: Webtechnologie -->
-        <section id="webtechnologie" class="mt-12 border-t border-slate-200 pt-10">
+        <section id="webtechnologie" class="mt-12">
           <p class="text-sm font-semibold uppercase tracking-widest text-teal-700">Project 2</p>
           <h2 class="mt-1 text-2xl font-semibold text-slate-900">Webtechnologie</h2>
           <figure class="mt-6">
@@ -92,11 +92,11 @@
           <h3 class="mt-8 text-lg font-semibold text-slate-900">Projectinformatie</h3>
           <p class="mt-3">Dit project behandelt HTML, Tailwind CSS, responsive design, formulieren en toegankelijkheid. De site werkt op gsm, tablet en laptop, en is ook met alleen het toetsenbord te gebruiken. Met Git en GitHub bewaar ik elke versie, en Netlify zet de site automatisch online.</p>
           <p class="mt-6 text-sm"><strong class="text-slate-900">Tools:</strong> HTML, Tailwind CSS, VS Code, Git, GitHub, Netlify</p>
-          <p class="mt-6"><a href="#inhoud" class="text-sm text-teal-700 underline">Naar boven</a></p>
+          <p class="mt-6"><a href="#inhoud" class="text-sm text-teal-700 underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700">Naar boven</a></p>
         </section>
 
         <!-- Project 3: Scripting -->
-        <section id="scripting" class="mt-12 border-t border-slate-200 pt-10">
+        <section id="scripting" class="mt-12">
           <p class="text-sm font-semibold uppercase tracking-widest text-teal-700">Project 3</p>
           <h2 class="mt-1 text-2xl font-semibold text-slate-900">Scripting</h2>
           <figure class="mt-6">
@@ -108,13 +108,13 @@
           <h3 class="mt-8 text-lg font-semibold text-slate-900">Projectinformatie</h3>
           <p class="mt-3">Dit project behandelt Linux commandline operaties en shell scripting. Ik heb ervaring opgedaan met user management, file permissions (chmod/chown), directory structures en het schrijven van Bash scripts voor geautomatiseerde systeemtaken. Het project demonstreert fundamentele Linux systeembeheer vaardigheden die essentieel zijn voor systeemadministratoren en developers. Scripts kunnen gebruikt worden voor backup, logging, monitoring en andere repetitieve taken.</p>
           <p class="mt-6 text-sm"><strong class="text-slate-900">Tools:</strong> Linux, Bash, chmod, chown</p>
-          <p class="mt-6"><a href="#inhoud" class="text-sm text-teal-700 underline">Naar boven</a></p>
+          <p class="mt-6"><a href="#inhoud" class="text-sm text-teal-700 underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700">Naar boven</a></p>
         </section>
 
         <!-- Knoppen onderaan -->
         <div class="mt-10 flex flex-wrap justify-between gap-3">
-          <a href="portfolio.html" class="inline-block rounded-full border border-slate-300 px-5 py-3 font-semibold text-slate-900 hover:bg-slate-100">← Alle projecten</a>
-          <a href="contact.html" class="inline-block rounded-full bg-teal-400 px-5 py-3 font-semibold text-slate-900 hover:bg-teal-300">Vragen over een project? →</a>
+          <a href="portfolio.html" class="inline-flex items-center gap-2 rounded-full border border-slate-300 px-5 py-3 font-semibold text-slate-900 hover:bg-slate-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700">← Alle projecten</a>
+          <a href="contact.html" class="inline-flex items-center gap-2 rounded-full bg-teal-400 px-5 py-3 font-semibold text-slate-900 hover:bg-teal-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700">Vragen over een project? →</a>
         </div>
       </main>
 
@@ -124,9 +124,9 @@
         <section class="rounded-2xl bg-slate-100 p-6">
           <h2 class="text-lg font-semibold text-slate-900">Op deze pagina</h2>
           <ul class="mt-3 space-y-2">
-            <li><a href="#serverbeheer" class="text-teal-700 underline">Project 1: Serverbeheer</a></li>
-            <li><a href="#webtechnologie" class="text-teal-700 underline">Project 2: Webtechnologie</a></li>
-            <li><a href="#scripting" class="text-teal-700 underline">Project 3: Scripting</a></li>
+            <li><a href="#serverbeheer" class="text-teal-700 underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700">Project 1: Serverbeheer</a></li>
+            <li><a href="#webtechnologie" class="text-teal-700 underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700">Project 2: Webtechnologie</a></li>
+            <li><a href="#scripting" class="text-teal-700 underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700">Project 3: Scripting</a></li>
           </ul>
         </section>
 
@@ -145,7 +145,7 @@
 
     <!-- Footer -->
     <footer class="mb-6 rounded-xl bg-slate-900 p-6 text-sm text-slate-300">
-      <p>&copy; 2026 Mansour Karimi · <a href="mailto:mansourkarimi@student.ap.be" class="underline hover:text-teal-300">mansourkarimi@student.ap.be</a> · <a href="tel:+32467646561" class="underline hover:text-teal-300">0467 64 65 61</a></p>
+      <p>&copy; 2026 Mansour Karimi · <a href="mailto:mansourkarimi@student.ap.be" class="underline hover:text-teal-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700">mansourkarimi@student.ap.be</a> · 0467 64 65 61</p>
     </footer>
 
   </div>
